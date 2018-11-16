@@ -1,0 +1,66 @@
+html{
+    width:100%;
+    height: 100%;
+    font-size: 1vw;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+}
+
+body{
+    padding:0;
+    margin:0;
+}
+
+#club{
+    color:red;
+}
+
+#game{
+    background-image: url("imgs/table.jpg");
+    border-radius: 20%;
+    border-style: solid;
+    border-color: #331a00;
+    border-width: 10px;
+    margin:5%;
+
+}
+
+#game h1{
+    color:white;
+    margin:0;
+    padding:0;
+}
+
+#game button{
+    margin:5px;
+}
+
+#game p img{
+    position: relative;
+    padding: 10px;
+}
+
+#player1{
+    color:white;
+    animation: blinker 1s linear infinite;
+}
+
+
+
+#dealer1{
+    animation: blinker 1s linear infinite;
+    color:white;
+}
+
+@keyframes blinker {
+    50% { opacity: 0; }
+
+}
+
+.footer{
+    background-color: black;
+    color: white;
+    font-size: 0.5rem;
+    text-align:center;
+    margin:0;
+}

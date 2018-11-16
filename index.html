@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="blackjack.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+    <script src="js/blackjack_object.js"></script>
+    <script src="js/blackjack_manager.js"></script>
+    <title>BlackJack</title>
+  </head>
+
+  <body>
+    <header>
+      <h1><span id="club">&clubsuit;</span> BLACKJACK <span>&diamondsuit;</span></h1>
+    </header>
+
+    <section id="game" border>
+      <h1>Dealer</h1>
+      <p id="dealer"></p>
+      <p id="dealer1"></p>
+      <h1>Player</h1>
+      <p id="player"></p>
+      <p id="player1"></p>
+      <p id="player2"></p>
+      <button id="card" type="button" onclick="player_new_card()">Card</button>
+      <button id="stand" type="button" onclick="dealer_finish()">Stand</button>
+      <button id="new_game" type="button" onclick="new_game()" disabled>New Game</button>
+    </section>
+
+    <section>
+      <script> window.onload = new_game();</script>
+    </section>
+    <footer>
+      <div class="footer">Copyright 2017 ISEL PCM.</div>
+    </footer>
+  </body>
+
+</html> 
